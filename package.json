@@ -1,0 +1,21 @@
+{
+  "name": "com.hwaet.wobble",
+  "displayName": "wobble",
+  "author": {
+    "name": "Hwaet",
+    "email": "dev@hwaetgames.com",
+    "url": "http://www.hwaetgames.com"
+  },
+  "version": "0.0.1",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.unity.inputsystem": "1.0.2"
+  },
+  "keywords": [
+    "unity",
+    "editor"
+  ],
+  "category": "Unity",
+  "type": "tool",
+  "description": "A shader graph approach to giving units a slight inflation/wobble on placement."
+}
