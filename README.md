@@ -1,4 +1,8 @@
 
+
+https://user-images.githubusercontent.com/30280876/128969050-432695d8-fbd8-40c4-9de1-b93b6aaecb75.mp4
+
+
 # Package
 A small tool for placing objects and giving them a little inflation wobble. This package requires the unity input system for grabbing user input in the test scene, and unity URP for the shader graph-based material that implements the wobble.
 
