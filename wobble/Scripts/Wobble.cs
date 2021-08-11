@@ -55,8 +55,11 @@ public class Wobble : MonoBehaviour
 			for (int i=0; i< materials.Count; i++)
 			{
 				calculateWobbleStrength();
-				
-				Vector3 center = newObject.GetComponentInChildren<Collider>().bounds.center; //grab the first collider we find in our prefab, and use its center for the wobble.
+
+				Collider childCollider = newObject.GetComponentInChildren<Collider>();
+				Debug.Assert(childCollider != null, $"There must be a collider in this prefab {newObject.name}");
+
+				Vector3 center = childCollider.bounds.center; //grab the first collider we find in our prefab, and use its center for the wobble.
 				materials[i].SetVector("_wobblePosition", center);
 				materials[i].SetFloat("_radius", radius);
 				materials[i].SetFloat("_strength", modifiedStrength);
